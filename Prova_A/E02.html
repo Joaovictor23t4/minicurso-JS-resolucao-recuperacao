@@ -1,14 +1,26 @@
 <meta charset="utf-8" />
 <script>
-    // Você foi encarregado de realizar uma pesquisa sobre acesso a computadores. A sua pesquisa deverá apresentar o percentual de alunos da sua escola que possuem acesso computadores. Para isso, elabore um algoritmo que leia o número total de alunos da sua escola e o número de alunos que possuem acesso a computadores, por fim, com base nestes dados, escreva o percentual de alunos com acesso a computadores.
+    // Você foi encarregado de realizar uma pesquisa sobre acesso a computadores. A sua pesquisa deverá apresentar o percentual de alunos da sua escola que possuem acesso computadores. Para isso, elabore uma conta/ uma tarefa que leia o número total de alunos da sua escola e o número de alunos que possuem acesso a computadores, por fim, com base nestes dados, escreva o percentual de alunos com acesso a computadores.
     // Por exemplo, em uma escola com 500 alunos, apenas 200 alunos possuem acesso à Internet, o que equivale a 40% destes 500 alunos.
 
     //ENTRADA
-
-
+    const alunosTotais = Number(prompt(`Insira o número total de alunos`));
+    const alunosComComputadores = Number(prompt(`Insira quantos alunos dessa escola tem computadores`));
     //PROCESSAMENTO
-    
-
+    const calculo = (alunosComComputadores) * 100 / alunosTotais;
     //SAÍDA
+    alert(`A porcentagem de alunos de uma escola é ${calculo.toFixed(1).replace("." , ",")}%`);
 
+
+
+
+/*
+    ORDEM DAS OPERAÇÕES EM JAVASCRIPT (Em ordem da maior para menor prioridade):
+    () - Prioridade Máxima;
+    Maths = Segunda Prioridade;
+    Da esquerda para a direita;
+    ** Potencia
+    * ou / Mult ou Div
+    + ou - Soma ou Subtr
+*/
 </script>

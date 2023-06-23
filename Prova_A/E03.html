@@ -3,11 +3,11 @@
     //Elaborar um programa que leia a duração de uma viagem em dias e horas. Calcule e informe a duração total da viagem em número de horas.
 
     //ENTRADA
-
+    const dias = Number(prompt(`Informe quantos dias durou sua viagem:`));
+    const horas = Number(prompt(`Informe quantas horas durou sua viagem:`).replace(",","."));
 
     //PROCESSAMENTO
-    
-
+    const conta = (dias * 24) + horas;
     //SAÍDA
-
+   alert(`Sua viagem deu ${conta} horas.`);
 </script>

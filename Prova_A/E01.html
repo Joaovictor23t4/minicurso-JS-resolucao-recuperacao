@@ -3,12 +3,12 @@
     // Elaborar um programa para um motot taxy. O programa deve ler o valor a ser pago para cada 5 km de distância e a distância total para realizar a entrega, em km. Informe o valor a ser pago pelo cliente, sabendo que as frações extras de 5 kms devem ser cobradas de forma integral.
 
     //ENTRADA
-
-    
+    const valor5Km = Number(prompt(`Informe o valor a ser pago a cada 5KM`).replace("," , "."));
+    const distancia = Number(prompt(`Informe a distância percorrida`).replace("," , ".")); 
     //PROCESSAMENTO
-
-
+    const calculo = Math.ceil(distancia / 1);
+    const valorPago = (calculo * 25) / 5;
     //SAÍDA
-
-
+    alert(`O valor a ser pago será de: R${valorPago.toFixed(2).replace("." , ",")}`)
+    alert(Math.ceil(6.01 / 1));
 </script>
